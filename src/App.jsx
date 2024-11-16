@@ -8,7 +8,9 @@ function App() {
     setIsGameStarted((prev) => !prev);
   };
 
-  return <>{isGameStarted ? <GamePlay /> : <StartGame toggle={toggleGamePlay} />}</>;
+  return (
+    <>{isGameStarted ? <GamePlay /> : <StartGame toggle={toggleGamePlay} />}</>
+  );
 }
 
 export default App;
